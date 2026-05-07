@@ -5,10 +5,20 @@ public class Cliente {
 	private String cedula;
 	private String nombre;
 	private String apellido;
-	
-	
-	
-	
+	private String email;
+
+	public Cliente() {
+
+	}
+
+	public Cliente(String cedula, String nombre, String apellido, String email) {
+		super();
+		this.cedula = cedula;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+	}
+
 	public String getCedula() {
 		return cedula;
 	}
@@ -32,26 +42,19 @@ public class Cliente {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-	
 
-	public Cliente() {
-		
+	public String getEmail() {
+		return email;
 	}
-	
-	public Cliente(String cedula, String nombre, String apellido) {
-		super();
-		this.cedula = cedula;
-		this.nombre = nombre;
-		this.apellido = apellido;
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override
 	public String toString() {
-		return "Clientes [cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+		return "Cliente [cedula=" + cedula + ", nombre=" + nombre + ", apellido="
+				+ apellido + ", email=" + email + "]";
 	}
-	
-	
-	
-	
-	
+
 }
